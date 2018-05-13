@@ -20,6 +20,7 @@ jobs:
       - run:
           command: |
             sudo pip install pipenv
+            pipenv install python3
             pipenv install pytest
             pip install pytest
       - save_cache:
