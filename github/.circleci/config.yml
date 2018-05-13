@@ -29,7 +29,8 @@ jobs:
             - "/usr/local/bin"
             - "/usr/local/lib/python3.6/site-packages"
       - run:
-          command: python /home/ubunto/githubtest/github/tests/__main__.py  
+          command: pipenv run "python manage.py test"
+          python /home/ubunto/githubtest/github/tests/__main__.py  
 
           
       - store_test_results:
