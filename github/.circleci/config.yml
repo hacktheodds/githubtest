@@ -20,10 +20,6 @@ jobs:
       - run:
           command: |
             sudo pip install pipenv
-            sudo pip install requests 
-            sudo pip install jwt
-            pipenv install jwt
-            pipenv install requests
             pipenv install pytest
       - save_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
