@@ -50,6 +50,7 @@ from Gist import *
 from GistComment import *
 from GitBlob import *
 from GitCommit import *
+from github import Github
 from Github_ import *
 from GitRef import *
 from GitRelease import *
