@@ -31,12 +31,7 @@ jobs:
             - "/usr/local/lib/python3.6/site-packages"
             
       - run: 
-          command: run python run python /home/ubunto/githubtest/github/tests/AllTests.py
-      - run:
-          command: pipenv run python /home/ubunto/githubtest/github/tests/__main__.py
-      - run:
-          command: pipenv run python /home/ubunto/githubtest/github/tests/unittest.py      
-
+          command: run python /home/ubunto/githubtest/github/tests/AllTests.py
           
       - store_test_results:
           path: test-results          
