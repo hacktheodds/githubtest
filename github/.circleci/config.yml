@@ -28,7 +28,8 @@ jobs:
             - "/usr/local/bin"
             - "/usr/local/lib/python3.6/site-packages"
       - run:
-          command: python /home/circleci/circleci-demo-python-django/github/tests/__main__.py  
+          command: . venv/bin/activate
+          python /home/circleci/circleci-demo-python-django/github/tests/__main__.py  
           python /home/ubuntu/githubtest/github/tests/github/tests/__main__.py
           python /home/ubuntu/githubtest/github/tests/github/tests/AllTests.py 
           
