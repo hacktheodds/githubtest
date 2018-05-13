@@ -30,8 +30,7 @@ jobs:
             - "/usr/local/bin"
             - "/usr/local/lib/python3.6/site-packages"
       - run:
-          command: |
-          python /home/circleci/circleci-demo-python-django/github/tests/__main__.py  
+          command: python /home/circleci/circleci-demo-python-django/github/tests/__main__.py  
           
       - store_artifacts:
           path: test-reports
