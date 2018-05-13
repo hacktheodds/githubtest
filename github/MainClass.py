@@ -47,7 +47,7 @@ import pickle
 import time
 import sys
 from httplib import HTTPSConnection
-import jwt
+###### import jwt
 
 from Requester import Requester, json
 import AuthenticatedUser
