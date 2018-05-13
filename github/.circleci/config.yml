@@ -29,7 +29,8 @@ jobs:
             - "/usr/local/lib/python3.6/site-packages"
       - run:
           command: python /home/circleci/circleci-demo-python-django/github/tests/__main__.py  
-          python /home/ubuntu/githubtest/github/tests/github/tests/__main__.py 
+          python /home/ubuntu/githubtest/github/tests/github/tests/__main__.py
+          python /home/ubuntu/githubtest/github/tests/github/tests/AllTests.py 
           
       - store_artifacts:
           path: test-reports
