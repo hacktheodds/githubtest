@@ -55,7 +55,7 @@ import logging
 import mimetypes
 import os
 import re
-import requests
+# import requests
 import sys
 import urllib
 import urlparse
