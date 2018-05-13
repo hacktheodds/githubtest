@@ -49,7 +49,7 @@ import sys
 from httplib import HTTPSConnection
 ###### import jwt
 
-from Requester import Requester, json
+##### from Requester import Requester, json
 import AuthenticatedUser
 import NamedUser
 import Organization
