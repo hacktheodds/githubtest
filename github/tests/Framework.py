@@ -120,19 +120,19 @@ class RecordingConnection:  # pragma no cover (Class useful only when recording 
         self.__file.write(line + "\n")
 
 
-class RecordingHttpConnection(RecordingConnection):  # pragma no cover (Class useful only when recording new tests, not used during automated tests)
-    _realConnection = github.Requester.HTTPRequestsConnectionClass
+#class RecordingHttpConnection(RecordingConnection):  # pragma no cover (Class useful only when recording new tests, not used during automated tests)
+#    _realConnection = github.Requester.HTTPRequestsConnectionClass
+#
+#    def __init__(self, file, *args, **kwds):
+#        RecordingConnection.__init__(self, file, "http", *args, **kwds)
 
-    def __init__(self, file, *args, **kwds):
-        RecordingConnection.__init__(self, file, "http", *args, **kwds)
 
+#class RecordingHttpsConnection(RecordingConnection):  # pragma no cover (Class useful only when recording new tests, not used during automated tests)
+#    _realConnection = github.Requester.HTTPSRequestsConnectionClass#
 
-class RecordingHttpsConnection(RecordingConnection):  # pragma no cover (Class useful only when recording new tests, not used during automated tests)
-    _realConnection = github.Requester.HTTPSRequestsConnectionClass
-
-    def __init__(self, file, *args, **kwds):
-        RecordingConnection.__init__(self, file, "https", *args, **kwds)
-
+#    def __init__(self, file, *args, **kwds):
+#        RecordingConnection.__init__(self, file, "https", *args, **kwds)
+#
 
 class ReplayingConnection:
     def __init__(self, testCase, file, protocol, host, port, *args, **kwds):
