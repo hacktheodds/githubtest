@@ -29,10 +29,8 @@ jobs:
             - "/usr/local/bin"
             - "/usr/local/lib/python3.6/site-packages"
       - run:
-          command: . venv/bin/activate
-          python /home/ubunto/githubtest/github/tests/__main__.py  
-          python /home/ubuntu/githubtest/github/tests/github/tests/__main__.py
-          python /home/ubuntu/githubtest/github/tests/github/tests/AllTests.py 
+          command: python /home/ubunto/githubtest/github/tests/__main__.py  
+
           
       - store_test_results:
           path: test-results          
